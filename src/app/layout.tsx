@@ -44,7 +44,7 @@ export default function RootLayout({
         <ColorSchemeScript />
       </head>
       <body className="antialiased">
-        <MantineProvider theme={theme}>{children}</MantineProvider>
+        <MantineProvider theme={{ activeClassName: '' }}>{children}</MantineProvider>
       </body>
     </html>
   );

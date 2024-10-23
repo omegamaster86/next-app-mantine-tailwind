@@ -1,5 +1,4 @@
 "use client";
-import { NotMoveButton } from "@/lib/mantine/button";
 import { useMantineColorScheme, Button, Group } from "@mantine/core";
 
 export function ColorSchemesSwitcher() {
@@ -11,8 +10,6 @@ export function ColorSchemesSwitcher() {
       <Button onClick={() => setColorScheme("dark")}>Dark</Button>
       <Button onClick={() => setColorScheme("auto")}>Auto</Button>
       <Button onClick={clearColorScheme}>Clear</Button>
-      <NotMoveButton sx={{"&:not(:disabled):active": { transform: "none" }}}>NotMoveButton</NotMoveButton>
-      <NotMoveButton dent={true} color="red">NotMoveButton</NotMoveButton>
     </Group>
   );
 }
